@@ -55,6 +55,28 @@ body {
 }
 
 /* Calculator buttons */
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(199, 199, 199);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: none;
+}
+
 .calculator-buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -62,7 +84,23 @@ body {
   padding: 10px;
 }
 
+.operator {
+  background: grey;
+  color: #fff;
+  font-size: 30px;
+}
+
+.clear {
+  background: rgb(255, 40, 40);
+  color: #fff;
+}
+
+.clear:hover {
+  filter: brightness(90%);
+}
+
 .equal-sign {
   grid-column: -2;
   grid-row: 2 / span 4;
+  background: rgb(13, 206, 87);
 }
